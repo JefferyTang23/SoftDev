@@ -23,3 +23,17 @@ def max_end3(nums):
     if nums[0] > nums[2]:
         return [nums[0], nums[0], nums[0]]
     return [nums[2], nums[2], nums[2]]
+
+def sum2(nums):
+  nums.append(0)
+  nums.append(0)
+  return nums[0] + nums[1]
+
+def middle_way(a, b):
+  return [a[1], b[1]]
+
+def make_ends(nums):
+  return [nums[0], nums[-1]]
+
+def has23(nums):
+  return nums[0]==2 or nums[0]==3 or nums[1]==2 or nums[1]==3
