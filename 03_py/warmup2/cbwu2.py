@@ -31,17 +31,47 @@ def string_splosion(str):
     index += 1
   return string
 
-def last2(str): #incomplete
-  count = 0
-  index = 0
-  while index < len(str):
-    index2 = index+1
-    string = str[index:index+2]
-    while index2 < len(str):
-      string2 = str[index2:index2+2]
-      if string == string2:
-        count += 1
-      index2 += 1
-    index += 1
-  return count
-      
+def last2(str):
+  last = str[len(str)-2:len(str)]
+  retCount = 0
+  counter = 0
+  
+  while counter < len(str)-2:
+    if str[counter] == last[0]:
+      if str[counter + 1] == last[1]:
+        retCount += 1
+    counter = counter + 1
+    
+  return retCount
+
+def array_count9(nums):
+  counter = 0
+  for e in nums:
+    if e == 9:
+      counter += 1
+  return counter
+
+def array_front9(nums):
+  counter = 0
+  for e in nums:
+    if counter < 4 and e == 9:
+      return True
+    counter += 1
+  return False
+
+def array123(nums):
+  counter = 0
+  while counter < len(nums):
+    if nums[counter] == 1 and len(nums) > counter + 2 and nums[counter + 1] == 2 and nums[counter + 2] == 3:
+      return True
+    counter += 1
+  return False
+
+def string_match(a, b):
+  retCount = 0
+  counter = 0
+  while counter < len(a) - 1 and counter < len(b) - 1:
+    if a[counter] == b[counter] and a[counter + 1] == b[counter + 1]:
+      retCount += 1
+    counter += 1
+  return retCount
