@@ -1,0 +1,16 @@
+TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
+SoftDev
+K08
+2022-10-06
+Time Spent: 1hrs
+
+QCC:
+* Why does the browser download foo when we go to localhost/static/foo but not when we go to localhost/static/foo.html
+* Can we replace 127.0.0.1 with the word localhost and get the same result?
+
+DISCO:
+* Opening link in browser gives an "Unable to connect" error
+* Opening page after running app.py shows the same "No hablo queso!" page
+* adding "/static/foo" on the browser will cause it to download the file foo
+* adding "/static/foo.html" on the browser will cause it to not download the file foo.html but it will read the html file, showing the text "Is this plaintext, though?"
+* Fixie.html acts very similarly to foo.html
