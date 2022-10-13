@@ -2,7 +2,7 @@ TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
 SoftDev
 K08
 2022-10-06
-Time Spent:
+Time Spent: 3hrs
 
 v1 removes print(__name__)
 	this prints "__main__" in the terminal
