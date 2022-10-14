@@ -1,0 +1,19 @@
+TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
+SoftDev
+K10
+2022-10-13
+Time Spent: 0.5hrs
+
+QCC:
+* How do we open model_tmplt.html through running app.py in the terminal
+* We tried http://127.0.0.1:5000/templates/model_tmplt.html but it resulted
+in an error
+
+Disco:
+* We can open files locally in browsers
+* Opening model_tmplt.html locally displays a page that states
+
+{% for item in collection %} {{ item }}
+{% endfor %}
+
+* The title of the page is {{ foo }}
