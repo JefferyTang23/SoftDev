@@ -3,7 +3,7 @@ TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
 SoftDev
 K08
 2022-10-06
-Time Spent:
+Time Spent: 3hrs
 """
 
 from flask import Flask

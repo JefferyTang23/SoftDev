@@ -3,7 +3,7 @@ TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
 SoftDev
 K08
 2022-10-06
-Time Spent:
+Time Spent: 3hrs
 """
 
 from flask import Flask
@@ -18,27 +18,38 @@ def main():
     weight = []
     # parseinfo takes in a csv file and 2 lists. It parses the jobs in the csv file to the jobs list and the weights to the weight list, not including the total
     parseinfo("occupations.csv", jobs, weight)
+    ans = str(random.choices(jobs, weights = weight)[0])
+    ans = ans.strip('\"')
+    words = ans.split(' ')
+    link = "https://www.google.com/search?channel=fs&q="
+    for i in words:
+        link += i + "+"
+    link += "jobs"
     print(__name__) 
     return(
         """
         <style>
             body{
-                font-size: 50px; 
+                font-size: 50px;
+                background-color:rgb(200,200,200);
             }
             
             #main{
-                margin-top:25%;
-                width:50%;
+                margin-top:15%;
+                width:80%;
+                height:30%;
                 text-align:center;
-                background-color:rgb(0,0,0);
+                background-color:rgba(0,0,0,0.5);
+                border-radius: 400px;
                 color:rgb(255,255,255);
                 margin-right:auto;
                 margin-left:auto;
+                padding-top:50px;
             }
         </style>
         """+
         "<body>"+
-        "<div id = \"main\">" + str(random.choices(jobs, weights = weight)[0])  + "<br><a href=\"http://127.0.0.1:5000\">RELOAD</a>" + "</div>"
+        "<div id = \"main\">You Got:<br>"+ans+"<br><a href=\"" + link + "\">Learn more about the job</a><br><a href=\"http://127.0.0.1:5000\">RELOAD</a>" + "</div>"
         
         )
         
