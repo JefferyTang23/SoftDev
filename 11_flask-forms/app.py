@@ -30,7 +30,7 @@ PROTIP: Insert your own in-line comments
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
-    print("\n\n\n")
+    print("\n\n\n") #Print statements print in the terminal
     print("***DIAG: this Flask obj ***")
     print(app)
     print("***DIAG: request obj ***")
@@ -38,10 +38,10 @@ def disp_loginpage():
     print("***DIAG: request.args ***")
     print(request.args)
     #print("***DIAG: request.args['username']  ***") 
-    #print(request.args['username'])
+    #print(request.args['username']) #Does not function because username has not been entered yet
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template( 'login.html' )
+    return render_template( 'login.html' ) #Displays login.html on the browser
 
 
 @app.route("/auth") # , methods=['GET', 'POST'])
