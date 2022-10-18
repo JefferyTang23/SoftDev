@@ -1,0 +1,21 @@
+TNPG: sadidas; Roster: Joseph Jeon, Jeffery Tang, Jian Hong Li
+SoftDev
+K11
+2022-10-14
+Time Spent: .5hrs
+
+Predictions:
+* print statements will show up in the browser
+* return statements will show up in the terminal
+* request.args['username'] would work if there an username established
+
+QCC:
+* What does the "*" symbol mean in HTML?
+* What do print(app) do?
+* What is the ImmutableMultiDict([('username', 'srjntr,umf'), ('sub1', 'Submit Query')])?
+* Where does the "Submit Query" come from since it's not in the html file or python file?
+
+Disco:
+* When html runs <form action="/auth"> (when we click Submit Query) it runs the route in the python file
+* When submitting a username, it shows up in the link
+* Uncommenting line 41 creates an error, "BadRequestKeyError"
