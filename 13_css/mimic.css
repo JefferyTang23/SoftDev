@@ -20,14 +20,16 @@ h3 {
 
 .main {
     background: rgb(135,135,135);
-    display: block;
     display: flex;
     justify-content: space-between;
 }
 
 .navbar {
-    display: inline;
     text-align: left;
+}
+
+.lorem {
+    padding-left: 100px;
 }
 
 .foot {
