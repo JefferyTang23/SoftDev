@@ -1,4 +1,4 @@
-#SJS: Shinji, Jeremy and Sebastian
+#SJS: Shinji, Jeffery and Sebastian
 #SoftDev  
 #K18 -- SQLite in Python
 #2022-10-26
