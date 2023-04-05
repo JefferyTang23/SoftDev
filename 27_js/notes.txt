@@ -1,0 +1,18 @@
+Team Phantom Tollbooth ::Jeffery Tang, Elizabeth Paperno
+SoftDev pd7
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* relearning Scheme syntax - lambda, prefix notation 
+* learning conditionals and function syntax in JS 
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How do you run Scheme through terminal (no DrRacket)?
+* What does console.log() do? SHould we use it as opposed to return? 
+=================================================================
+
+
