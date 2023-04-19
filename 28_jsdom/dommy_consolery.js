@@ -116,13 +116,30 @@ var gcd = function(a, b){
   if (a == 0 || b == 0) {
     return 0;
   }
-  
-  aPrime = [];
-  bPrime = [];
-
-  var m = Math.max(a, b);
-
+  var counter = 1;
+  var g = 1;
+  if (a > b) {
+    while (counter <= b) {
+      if (a % counter == 0 && b % counter == 0) {
+        g = counter;
+      }
+      counter += 1;
+    }
+  }
+  else {
+    while (counter <= a) {
+      if (a % counter == 0 && b % counter == 0) {
+        g = counter;
+      }
+      counter += 1;
+    }
+  }
+  return g;
 }
+
+var a = gcd(50, 90);
+var start = "gcd of 50 and 90 is " + a;
+console.log(start);
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
