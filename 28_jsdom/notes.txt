@@ -1,0 +1,18 @@
+Team Phantom Tollbooth ::Jeffery Tang, Elizabeth Paperno
+SoftDev pd7
+K28 -- DOM
+2023-04-19W
+
+DISCO
+-----------------------------------------------------------------
+* In order of priority: blue, green, red
+* Class is not repeated if added again
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Why does class blue have priority over red and green?
+* What is the purpose of declaring a function as a variable?
+=================================================================
+
+

@@ -61,15 +61,18 @@ var addItem = function(text) { //adds an item to list
 
 var removeItem = function(n) { //removes an item from list
   var listitems = document.getElementsByTagName('li');
+  console.log(listitems)
   listitems[n].remove();
 };
 
 
 var red = function() { //makes 1st index and all items after and including index 8 red
-  var items = document.getElementsByTagName("li");
+  var items = document.getElementsByTagName("li"); 
+  console.log(items);
   for(var i = 0; i < items.length; i++) {
-    items[i].classList.add('red');
+    items[i].classList.add('red'); //red is added as a class to all items but only take effect if the classlist was previously empty
   }
+  console.log(items);
 };
 
 
@@ -82,6 +85,7 @@ var stripe = function() { //makes 1st index red and makes all items after and in
       items[i].classList.add('blue');
     }
   }
+  console.log(items);
 };
 
 //insert your implementations here for...
@@ -110,7 +114,7 @@ var fib = function(n){
 
 var gcd = function(a, b){
   if (a == 0 || b == 0) {
-    return "undefined";
+    return 0;
   }
   
   aPrime = [];
@@ -118,7 +122,6 @@ var gcd = function(a, b){
 
   var m = Math.max(a, b);
 
-  for
 }
 
 // In addition to the style shown above,
