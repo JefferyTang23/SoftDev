@@ -1,0 +1,17 @@
+Team Phantom Tollbooth ::Jeffery Tang, Elizabeth Paperno
+SoftDev pd7
+K29 -- DOM 2
+2023-04-20Th
+
+DISCO
+-----------------------------------------------------------------
+* We use ()+>{function} as the 2nd parameter for addEventListener so it doesn't run before button is clicked
+* String concatenation works with string + int
+================================================================= 
+
+QCC
+-----------------------------------------------------------------
+* Why does the function run when page is loaded and before button is pressed if we just use the function itself as the 2nd parameter?
+=================================================================
+
+
