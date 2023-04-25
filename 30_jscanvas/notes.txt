@@ -1,0 +1,18 @@
+Team Phantom Tollbooth ::Jeffery Tang, Elizabeth Paperno
+SoftDev pd7
+K30 -- Clickdraw
+2023-04-24M
+
+DISCO
+-----------------------------------------------------------------
+* Using arc and rect to draw circles and rectangles
+* Using clearRect to clear the screen
+================================================================= 
+
+QCC
+-----------------------------------------------------------------
+* What is the parameter e supposed to be for each function?
+* How to change the text of a button?
+=================================================================
+
+
