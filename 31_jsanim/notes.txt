@@ -1,0 +1,17 @@
+Team JJ::Jeffery Tang, Ian Jiang
+SoftDev pd7
+K31 -- Grow
+2023-04-24M
+
+DISCO
+-----------------------------------------------------------------
+* Set growing to false to contract
+* window.cancelAnimationFrame(requestID) to make repeated button presses have no effect
+================================================================= 
+
+QCC
+-----------------------------------------------------------------
+* What is the parameter e supposed to be for each function?
+=================================================================
+
+
