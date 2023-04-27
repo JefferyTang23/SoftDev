@@ -53,15 +53,15 @@ var dvdLogoSetup = function() {
     var rectWidth = 120;
     var rectHeight = 60;
 
-    var rectX = Math.floor(Math.random() * c.width);
-    var rectY = Math.floor(Math.random() * c.height);
+    var rectX = Math.random() * (c.width);
+    var rectY = Math.random() * (c.height);
 
     var randx = Math.floor(Math.random() * 2);
     var randy = Math.floor(Math.random() * 2);
     var vel = [-1, 1];
     //velocity
-    var xVel = vel[randx];
-    var yVel = vel[randy];
+    var xVel = 1;
+    var yVel = 1;
 
     var logo = new Image();
     logo.src = "logo_dvd.jpg";
@@ -70,41 +70,11 @@ var dvdLogoSetup = function() {
         console.log("rectX: " + rectX + " rectY: " + rectY);
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
-        if (rectY <= 0) {
-            if (xVel == 1) {
-                xVel = -1;
-            }
-            else {
-                xVel = 1;
-            }
-            yVel = -1;
+        if (rectY < 0 || rectY > c.height - rectHeight) {
+            yVel = -yVel;
         }
-        if (rectY >= c.height) {
-            if (xVel == 1) {
-                xVel = -1;
-            }
-            else {
-                xVel = 1;
-            }
-            yVel = 1;
-        }
-        if (rectX <= 0) {
-            if (yVel == 1) {
-                yVel = -1;
-            }
-            else {
-                yVel = 1;
-            }
-            xVel = 1;
-        }
-        if (rectX >= c.width) {
-            if (yVel == 1) {
-                yVel = -1;
-            }
-            else {
-                yVel = 1;
-            }
-            xVel = -1;
+        if(rectX < 0 || rectX > c.width - rectWidth){
+            xVel = -xVel;
         }
         rectX += xVel;
         rectY += yVel;
