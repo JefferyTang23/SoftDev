@@ -1,0 +1,20 @@
+Team JJ::Jeffery Tang, Ian Jiang
+SoftDev pd7
+K33 -- Grow
+2023-04-27Th
+
+DISCO
+-----------------------------------------------------------------
+* they're all layered
+* what's true goes first with table being first when all true
+* bubble property is the true/false: event called first is the bottom layer and the alerts go through from bottom to top and runs every event in the chain
+* capture is the opposite of bubble and capturers are not triggered in bubble process
+================================================================= 
+
+QCC
+-----------------------------------------------------------------
+* Why is it called capturers
+* Why is the assignment called Bubble & Squeak? What is the squeak part?
+=================================================================
+
+
